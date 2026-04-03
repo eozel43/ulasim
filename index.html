@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütahya Belediyesi - Ulaşım Hizmetleri Müdürlüğü</title>
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'belediye-green': '#1D4E2C',
+                        'belediye-green-light': '#2D7A44',
+                        'belediye-accent': '#D4A853',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1D4E2C 0%, #2D7A44 100%);
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+        
+        .varaka-icon {
+            background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%);
+            color: #DC2626;
+        }
+        
+        .binis-icon {
+            background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+            color: #2563EB;
+        }
+        
+        .eselmobil-icon {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            color: #D97706;
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAF9] min-h-screen flex flex-col">
+    
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-[70px]">
+                <!-- Logo & Title -->
+                <div class="flex items-center gap-4">
+                    <img src="Belediye_Yuvarlak_logo (6).png" alt="Kütahya Belediyesi Logosu" class="w-12 h-12 object-contain">
+                    <div>
+                        <h1 class="text-lg font-bold text-gray-800">Kütahya Belediyesi</h1>
+                        <p class="text-sm text-gray-500">Ulaşım Hizmetleri Müdürlüğü</p>
+                    </div>
+                </div>
+                
+                <!-- Date -->
+                <div class="hidden sm:block">
+                    <span id="current-date" class="text-sm text-gray-500"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+                Ulaşım Hizmetleri Müdürlüğü
+            </h2>
+            <p class="text-xl text-white/80 max-w-2xl mx-auto">
+                Dijital Yönetim Paneli
+            </p>
+        </div>
+    </section>
+    
+    <!-- Main Content - Cards Grid -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            <!-- Card 1: Varakalar -->
+            <a href="https://varakalar.netlify.app" target="_blank" class="block">
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border-t-4 border-red-600">
+                    <div class="icon-circle varaka-icon mx-auto mb-6">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">Varakalar</h3>
+                    <p class="text-gray-600 text-center">
+                        Halk Otobüslerine kesilen cezalara ait dashboard
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="inline-flex items-center text-belediye-green font-medium">
+                            Git <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Card 2: Halk Otobüsleri Binişleri -->
+            <a href="https://binis.netlify.app" target="_blank" class="block">
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border-t-4 border-blue-600">
+                    <div class="icon-circle binis-icon mx-auto mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">Halk Otobüsleri Binişleri</h3>
+                    <p class="text-gray-600 text-center">
+                        Yıllara, aylara, biniş türlerine, ücret ve hatlara göre detaylı istatistikler
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="inline-flex items-center text-belediye-green font-medium">
+                            Git <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Card 3: Eşel Mobil -->
+            <a href="https://eselhesap.netlify.app" target="_blank" class="block">
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border-t-4 border-amber-600">
+                    <div class="icon-circle eselmobil-icon mx-auto mb-6">
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">Eşel Mobil</h3>
+                    <p class="text-gray-600 text-center">
+                        Benzin, asgari ücret ve TÜFE artışlarına göre zam hesaplama
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="inline-flex items-center text-belediye-green font-medium">
+                            Git <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-white/70 text-sm">
+                &copy; 2026 Kütahya Belediyesi - Tüm hakları saklıdır.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
