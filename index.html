@@ -18,9 +18,9 @@
 </head>
 <body class="min-h-screen flex flex-col">
     
-    <!-- Floating Header -->
-    <header class="sticky top-4 z-50 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-4 animate-fade-in-up">
-        <div class="glass-navbar rounded-2xl px-6 py-4 flex items-center justify-between shadow-sm">
+    <!-- Official Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 w-full animate-fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
             <!-- Logo & Title -->
             <div class="flex items-center gap-4">
                 <img src="Belediye_Yuvarlak_logo (6).png" alt="Kütahya Belediyesi Logosu" class="w-12 h-12 object-contain transition-transform duration-500 hover:rotate-6">
@@ -39,16 +39,12 @@
     
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 mt-6 animate-fade-in-up delay-100">
-        <div class="relative overflow-hidden rounded-3xl bg-cover bg-center py-16 sm:py-20 px-8 text-center shadow-lg border border-white/10" style="background-image: linear-gradient(to bottom right, rgba(29, 78, 44, 0.92), rgba(23, 63, 36, 0.95)), url('hero_background.png');">
-            <!-- Decorative background lights -->
-            <div class="absolute -top-24 -left-24 w-72 h-72 bg-belediye-accent/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
-            
+        <div class="relative overflow-hidden rounded-2xl bg-cover bg-center py-16 sm:py-20 px-8 text-center shadow-sm border border-gray-200" style="background-image: linear-gradient(to bottom right, rgba(29, 78, 44, 0.94), rgba(23, 63, 36, 0.97)), url('hero_background.png');">
             <div class="relative z-10">
-                <h2 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-green-100 to-amber-200 pb-2 mb-2 tracking-tight">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight">
                     Ulaşım Hizmetleri Müdürlüğü
                 </h2>
-                <p class="text-lg sm:text-xl font-medium text-white/85 max-w-2xl mx-auto tracking-wide">
+                <p class="text-lg sm:text-xl font-medium text-white/80 max-w-2xl mx-auto tracking-wide">
                     Dijital Yönetim Paneli
                 </p>
             </div>
@@ -60,7 +56,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             
             <!-- Card 1: Varakalar -->
-            <a href="https://varakalar.netlify.app" target="_blank" class="block animate-fade-in-up delay-200">
+            <a href="https://varakalar.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-200 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-red-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle varaka-icon mx-auto mb-6 shadow-sm border border-red-200/30">
@@ -80,7 +76,7 @@
             </a>
             
             <!-- Card 2: Halk Otobüsleri Binişleri -->
-            <a href="https://binis.netlify.app" target="_blank" class="block animate-fade-in-up delay-200">
+            <a href="https://binis.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-200 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-blue-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle binis-icon mx-auto mb-6 shadow-sm border border-blue-200/30">
@@ -100,7 +96,7 @@
             </a>
             
             <!-- Card 3: Eşel Mobil -->
-            <a href="https://eselhesap.netlify.app" target="_blank" class="block animate-fade-in-up delay-300">
+            <a href="https://eselhesap.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-300 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-amber-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle eselmobil-icon mx-auto mb-6 shadow-sm border border-amber-200/30">
@@ -129,8 +125,8 @@
                 &copy; 2026 Kütahya Belediyesi - Tüm hakları saklıdır.
             </p>
             <div class="flex gap-6 text-sm text-gray-500 font-semibold">
-                <a href="https://www.kutahya.bel.tr" target="_blank" class="hover:text-belediye-accent transition-colors">Belediye Web Sitesi</a>
-                <a href="https://kutahya.bel.tr/iletisim.asp" target="_blank" class="hover:text-belediye-accent transition-colors">İletişim</a>
+                <a href="https://www.kutahya.bel.tr" target="_blank" rel="noopener noreferrer" class="hover:text-belediye-accent transition-colors focus:outline-none">Belediye Web Sitesi</a>
+                <a href="https://kutahya.bel.tr/iletisim.asp" target="_blank" rel="noopener noreferrer" class="hover:text-belediye-accent transition-colors focus:outline-none">İletişim</a>
             </div>
         </div>
     </footer>
