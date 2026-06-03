@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kütahya Belediyesi - Ulaşım Hizmetleri Müdürlüğü</title>
     
-    <!-- Google Fonts - Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Meta Tags -->
+    <meta name="description" content="Kütahya Belediyesi Ulaşım Hizmetleri Müdürlüğü Dijital Yönetim Paneli ve Uygulama Portalı">
+    <meta name="theme-color" content="#1D4E2C">
+    <link rel="icon" type="image/webp" href="logo.webp">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ulasimhizmetleri.netlify.app/">
+    <meta property="og:title" content="Kütahya Belediyesi - Ulaşım Hizmetleri Müdürlüğü">
+    <meta property="og:description" content="Ulaşım Hizmetleri Müdürlüğü dijital ceza takip, biniş istatistikleri ve zam hesaplama modülleri geçiş portalı.">
+    <meta property="og:image" content="https://ulasimhizmetleri.netlify.app/logo.webp">
     
-    <!-- Custom Style Sheet -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ulasimhizmetleri.netlify.app/">
+    <meta property="twitter:title" content="Kütahya Belediyesi - Ulaşım Hizmetleri Müdürlüğü">
+    <meta property="twitter:description" content="Ulaşım Hizmetleri Müdürlüğü dijital ceza takip, biniş istatistikleri ve zam hesaplama modülleri geçiş portalı.">
+    <meta property="twitter:image" content="https://ulasimhizmetleri.netlify.app/logo.webp">
+    
+    <!-- Custom Style Sheet (Includes local Font Awesome & Plus Jakarta Sans) -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="min-h-screen flex flex-col">
@@ -23,7 +34,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
             <!-- Logo & Title -->
             <div class="flex items-center gap-4">
-                <img src="Belediye_Yuvarlak_logo (6).png" alt="Kütahya Belediyesi Logosu" class="w-12 h-12 object-contain transition-transform duration-500 hover:rotate-6">
+                <img src="logo.webp" alt="Kütahya Belediyesi Logosu" class="w-12 h-12 object-contain transition-transform duration-500 hover:rotate-6">
                 <div>
                     <h1 class="text-lg font-extrabold text-gray-800 tracking-tight">Kütahya Belediyesi</h1>
                     <p class="text-xs font-semibold text-belediye-green-light tracking-wide uppercase">Ulaşım Hizmetleri Müdürlüğü</p>
@@ -39,7 +50,7 @@
     
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 mt-6 animate-fade-in-up delay-100">
-        <div class="relative overflow-hidden rounded-2xl bg-cover bg-center py-16 sm:py-20 px-8 text-center shadow-sm border border-gray-200" style="background-image: linear-gradient(to bottom right, rgba(29, 78, 44, 0.94), rgba(23, 63, 36, 0.97)), url('hero_background.png');">
+        <div class="relative overflow-hidden rounded-2xl bg-cover bg-center py-16 sm:py-20 px-8 text-center shadow-sm border border-gray-200" style="background-image: linear-gradient(to bottom right, rgba(29, 78, 44, 0.94), rgba(23, 63, 36, 0.97)), url('hero_background.webp');">
             <div class="relative z-10">
                 <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight">
                     Ulaşım Hizmetleri Müdürlüğü
@@ -56,7 +67,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             
             <!-- Card 1: Varakalar -->
-            <a href="https://varakalar.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-200 group focus:outline-none">
+            <a href="https://varakalar.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Varakalar ceza takip paneline git (Yeni sekmede açılır)" class="block animate-fade-in-up delay-200 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-red-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle varaka-icon mx-auto mb-6 shadow-sm border border-red-200/30">
@@ -64,7 +75,7 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">Varakalar</h3>
                         <p class="text-gray-600 text-center text-[15px] leading-relaxed">
-                            Halk Otobüslerine kesilen cezalara ait dashboard
+                            Halk Otobüslerine kesilen cezalara ait ceza takip paneli
                         </p>
                     </div>
                     <div class="mt-8 text-center">
@@ -76,7 +87,7 @@
             </a>
             
             <!-- Card 2: Halk Otobüsleri Binişleri -->
-            <a href="https://binis.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-200 group focus:outline-none">
+            <a href="https://binis.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Halk Otobüsleri Binişleri istatistik paneline git (Yeni sekmede açılır)" class="block animate-fade-in-up delay-200 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-blue-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle binis-icon mx-auto mb-6 shadow-sm border border-blue-200/30">
@@ -96,7 +107,7 @@
             </a>
             
             <!-- Card 3: Eşel Mobil -->
-            <a href="https://eselhesap.netlify.app" target="_blank" rel="noopener noreferrer" class="block animate-fade-in-up delay-300 group focus:outline-none">
+            <a href="https://eselhesap.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Eşel Mobil hesaplama modülüne git (Yeni sekmede açılır)" class="block animate-fade-in-up delay-300 group focus:outline-none">
                 <div class="glass-card rounded-2xl p-8 shadow-sm card-hover border-t-4 border-amber-500/80 h-full flex flex-col justify-between">
                     <div>
                         <div class="icon-circle eselmobil-icon mx-auto mb-6 shadow-sm border border-amber-200/30">

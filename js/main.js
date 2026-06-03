@@ -24,17 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
         
         dateElement.textContent = `${gun}, ${gunNumara} ${ay} ${yil}`;
     }
-    
-    // Kart hover efektleri için eklenen animasyon kontrolü
-    const cards = document.querySelectorAll('.card-hover');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
 });
