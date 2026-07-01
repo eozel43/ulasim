@@ -70,6 +70,11 @@ body {
   color: #059669;
 }
 
+.route-icon {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  color: #4f46e5;
+}
+
 /* Focus Visible Outline for Accessibility */
 a:focus-visible {
   outline: 3px solid #2D7A44 !important;
