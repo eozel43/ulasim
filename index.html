@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kütahya Belediyesi Ulaşım Hizmetleri Müdürlüğü dijital uygulamalar giriş noktası.">
-  <meta name="theme-color" content="#173f30">
-  <title>Ulaşım Hizmetleri | Kütahya Belediyesi</title>
-  <link rel="icon" type="image/webp" href="logo.webp">
+  <meta name="description" content="Kütahya Belediyesi Ulaşım Hizmetleri Müdürlüğü resmî dijital hizmet ve uygulama portalı.">
+  <meta name="theme-color" content="#20245f">
+  <title>Dijital Hizmetler | Kütahya Belediyesi Ulaşım Hizmetleri</title>
+  <link rel="icon" type="image/webp" href="logo-256.webp">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,36 +16,44 @@
     <div class="gov-bar">
       <div class="shell gov-bar-inner">
         <span>T.C. Kütahya Belediyesi</span>
-        <span>Ulaşım Hizmetleri Müdürlüğü</span>
+        <span>Resmî Dijital Hizmet Portalı</span>
       </div>
     </div>
     <div class="shell header-inner">
       <a class="brand" href="/" aria-label="Kütahya Belediyesi Ulaşım Hizmetleri ana sayfa">
-        <img src="logo.webp" alt="" width="56" height="56">
+        <img src="logo-256.webp" alt="" width="56" height="56">
         <span class="brand-copy">
           <strong>Kütahya Belediyesi</strong>
           <span>Ulaşım Hizmetleri Müdürlüğü</span>
         </span>
       </a>
-      <img class="header-ataturk" src="ataturk-turk-bayragi.png" alt="Türk bayrağı ve Gazi Mustafa Kemal Atatürk" width="139" height="99">
+      <div class="header-tools">
+        <nav class="header-nav" aria-label="Sayfa bağlantıları">
+          <a href="#uygulamalar">Uygulamalar</a>
+          <a href="#kurumsal-destek">Destek</a>
+        </nav>
+        <p class="header-date"><span>Bugün</span><time id="current-date"></time></p>
+        <img class="header-ataturk" src="ataturk-turk-bayragi.png" alt="Türk bayrağı ve Gazi Mustafa Kemal Atatürk" width="104" height="74">
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="intro shell" aria-labelledby="page-title">
+    <section class="intro" aria-labelledby="page-title">
       <div class="intro-kicker">
         <span>Ana Sayfa</span>
         <span class="route-line" aria-hidden="true"></span>
-        <span>Dijital Uygulamalar</span>
+        <span>Dijital Hizmetler</span>
       </div>
       <div class="intro-grid">
         <div>
-          <p class="eyebrow">Kurumsal uygulama portalı</p>
-          <h1 id="page-title">Ulaşım Hizmetleri Müdürlüğü</h1>
+          <p class="eyebrow">Resmî kurumsal portal</p>
+          <h1 id="page-title">Ulaşım Hizmetleri <span>Dijital Portalı</span></h1>
         </div>
         <div class="intro-note">
-          <p>Müdürlüğümüzün ulaşım yönetimi, raporlama ve hesaplama uygulamalarına tek noktadan erişin.</p>
-          <p class="date-mobile" id="current-date-mobile"></p>
+          <p>Ulaşım yönetimi, veri analizi, raporlama ve hesaplama hizmetlerine güvenli bir erişim noktasından ulaşın.</p>
+          <p class="portal-trust"><span aria-hidden="true">✓</span> Kütahya Belediyesi kurumsal erişim merkezi</p>
+          <time class="date-mobile" id="current-date-mobile"></time>
         </div>
       </div>
     </section>
@@ -53,68 +61,79 @@
     <section class="apps shell" id="uygulamalar" aria-labelledby="apps-title">
       <div class="section-heading">
         <div>
-          <h2 id="apps-title">Dijital uygulamalar</h2>
+          <p class="eyebrow">Tek noktadan erişim</p>
+          <h2 id="apps-title">Dijital hizmetler</h2>
         </div>
-        <p>Bağlantılar yeni sekmede açılır.</p>
+        <p id="external-link-note">Harici uygulamalar yeni sekmede açılır.</p>
       </div>
 
       <div class="app-grid">
-        <a class="app-card" href="https://varakalar.netlify.app" target="_blank" rel="noopener noreferrer">
-          <span class="card-index">01 / Takip</span>
+        <a class="app-card" href="https://varakalar.netlify.app" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">
+          <span class="card-index">01 / Denetim</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6zM9 11h6m-6 4h6M14 3v4h4"/></svg></span>
           <span class="card-body"><span class="card-title">Varakalar</span><span class="card-copy">Halk otobüslerine düzenlenen cezaların kayıt ve takip paneli.</span></span>
-          <span class="card-action">Paneli aç <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="card-action">Uygulamayı aç <span class="sr-only">— yeni sekmede açılır</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
 
-        <a class="app-card" href="https://binis.netlify.app" target="_blank" rel="noopener noreferrer">
-          <span class="card-index">02 / Analiz</span>
+        <a class="app-card" href="https://binis.netlify.app" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">
+          <span class="card-index">02 / Veri analizi</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m6 14v-7m5 7V3"/></svg></span>
           <span class="card-body"><span class="card-title">Halk Otobüsü Binişleri</span><span class="card-copy">Yıl, ay, biniş türü, ücret ve hat kırılımlarındaki yolculuk verilerini inceleyin.</span></span>
-          <span class="card-action">İstatistikleri aç <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="card-action">Verileri incele <span class="sr-only">— yeni sekmede açılır</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
 
-        <a class="app-card" href="https://eselhesap.netlify.app" target="_blank" rel="noopener noreferrer">
+        <a class="app-card" href="https://eselhesap.netlify.app" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">
           <span class="card-index">03 / Hesaplama</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16M5 10h11M8 6h5m3 3 3 2v6a2 2 0 0 0 2 2"/></svg></span>
           <span class="card-body"><span class="card-title">Eşel Mobil</span><span class="card-copy">Benzin, asgari ücret ve TÜFE değişimlerine göre ücret artışını hesaplayın.</span></span>
-          <span class="card-action">Hesaplamayı başlat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="card-action">Hesaplamayı başlat <span class="sr-only">— yeni sekmede açılır</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
 
-        <a class="app-card" href="https://edskazanci.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a class="app-card" href="https://edskazanci.netlify.app/" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">
           <span class="card-index">04 / Raporlama</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10m5 10V4m5 16v-7m5 7V7M3 20h18"/></svg></span>
           <span class="card-body"><span class="card-title">EDS Kazanç Paneli</span><span class="card-copy">Elektronik denetleme sistemi kazanımlarını takip edin ve raporlayın.</span></span>
-          <span class="card-action">Raporlara git <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="card-action">Raporları incele <span class="sr-only">— yeni sekmede açılır</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
 
-        <a class="app-card" href="https://nasilgiderim.netlify.app" target="_blank" rel="noopener noreferrer">
-          <span class="card-index">05 / Güzergâh</span>
+        <a class="app-card app-card--featured" href="https://nasilgiderim.netlify.app" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">
+          <span class="card-index">05 / Vatandaş hizmeti</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h3a3 3 0 0 0 3-3V8a3 3 0 0 1 3-3"/></svg></span>
           <span class="card-body"><span class="card-title">Nasıl Giderim?</span><span class="card-copy">Kalkış ve varış mahallenize göre uygun otobüs hatlarını ve aktarmaları bulun.</span></span>
-          <span class="card-action">Kılavuza Git <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="card-action">Rota planla <span class="sr-only">— yeni sekmede açılır</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
 
         <article class="app-card app-card--upcoming" aria-label="Görev Takip Sistemi, yakında">
-          <span class="card-index">06 / İş Takibi</span>
+          <span class="card-index">06 / İş takibi</span>
           <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h6m-7-2h8v4H8zM6 5H4v16h16V5h-2M8 12l2 2 4-4m-6 8h8"/></svg></span>
           <span class="card-body"><span class="card-title">Görev Takip Sistemi</span><span class="card-copy">Planlanan ve tamamlanan işlerin durumunu tek noktadan takip edin.</span></span>
-          <span class="card-action"><span class="status-badge">Yakında</span></span>
+          <span class="card-action"><span class="status-badge">Geliştirme aşamasında</span></span>
         </article>
       </div>
+
+      <aside class="service-note" id="kurumsal-destek" aria-labelledby="support-title">
+        <span class="service-label">Kurumsal destek</span>
+        <div>
+          <h3 id="support-title">Erişim konusunda yardıma mı ihtiyacınız var?</h3>
+          <p>Uygulamalara erişim veya kullanım sorunları için Ulaşım Hizmetleri Müdürlüğü ile iletişime geçebilirsiniz.</p>
+        </div>
+        <a href="https://kutahya.bel.tr/iletisim.asp" target="_blank" rel="noopener noreferrer">İletişime geç <span aria-hidden="true">↗</span><span class="sr-only"> — yeni sekmede açılır</span></a>
+      </aside>
     </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <p>© 2026 Kütahya Belediyesi · Ulaşım Hizmetleri Müdürlüğü</p>
+      <p>© 2026 Kütahya Belediyesi · Tüm hakları saklıdır.</p>
       <nav class="footer-links" aria-label="Kurumsal bağlantılar">
         <a href="https://www.kutahya.bel.tr/" target="_blank" rel="noopener noreferrer">Belediye Web Sitesi <span aria-hidden="true">↗</span></a>
         <a href="https://kutahya.bel.tr/iletisim.asp" target="_blank" rel="noopener noreferrer">İletişim <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
-    <div class="shell footer-credit">
-      <p>Hazırlayan: Emre ÖZEL Endüstri Yük. Mühendisi</p>
+    <div class="shell footer-meta">
+      <p>Kurumsal portal sahibi: Ulaşım Hizmetleri Müdürlüğü</p>
+      <p>Harici hizmet bağlantıları güvenli yeni sekmede açılır.</p>
     </div>
   </footer>
   <script type="module" src="js/main.js"></script>

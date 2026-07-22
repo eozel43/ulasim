@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'belediye-green': '#1D4E2C',
-        'belediye-green-light': '#2D7A44',
-        'belediye-accent': '#D4A853',
+        'belediye-navy': '#31357F',
+        'belediye-navy-dark': '#20245F',
+        'belediye-red': '#C10841',
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
