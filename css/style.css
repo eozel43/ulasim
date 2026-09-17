@@ -93,6 +93,7 @@ h1 span { display: block; }
 .card-action svg { width: 19px; height: 19px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; transition: transform .2s ease; }
 .app-card:hover .card-action svg { transform: translateX(5px); }
 .status-badge { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 10px; color: var(--red); background: rgba(193,8,65,.08); border: 1px solid rgba(193,8,65,.28); border-radius: 999px; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.card-body > .status-badge { width: fit-content; margin-bottom: 2px; }
 
 .service-note { margin-top: 32px; padding: 26px 28px; display: grid; grid-template-columns: .42fr 1.35fr auto; gap: 28px; align-items: center; background: var(--navy-soft); border: 1px solid var(--line-brand); border-left: 4px solid var(--red); border-radius: 0 10px 10px 0; }
 .service-label { color: var(--navy); font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
